@@ -1,0 +1,122 @@
+:root {
+    --green-color: #40B526;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0px 10px; */
+    font-weight: bold;
+    font-size: 14px;
+}
+.header-logo {
+    margin: 0px 10px;
+}
+
+.header-logo:hover {
+    transform: rotate(5deg);
+}
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    position: relative; 
+}
+.header-menu .header-menu__item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-menu p {
+    margin: 0px;
+    color: var(--green-color);
+
+}
+
+.header-menu a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-menu__btn {
+    display: flex;
+    flex-direction: row;
+    width: 85px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.bt-item-club {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.bt-item-club:hover {
+    transform: rotate(5deg);
+}
+
+.bt-item-club_bg {
+    color: #94A9B7;
+    background-color: #252D33;
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+
+.header__arow_green {
+    width: 7px;
+    height: 7px;
+    border-top: 3px solid var(--green-color);
+    border-left: 3px solid var(--green-color);
+    transform: rotate(224deg);
+    margin: 0px 5px;
+}
+
+.header-account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.header-account p {
+    margin: 0px;
+}
+
+.header-account .header-menu__btn {
+    width: 140px;
+}
+
+.header__account-img {
+    width: 20px;
+    position: absolute;
+    display: none;
+}
+
+header .link {
+    position: relative;
+}
+
+header .link::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 0.5px;
+    background: #0000005c;
+    transition: 0.3s;
+}
+
+header .link:hover:after {
+    width: 100%;
+}
