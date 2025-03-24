@@ -1,0 +1,23 @@
+.main-menu {
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: space-between;
+    max-width: 720px;
+    margin: 30px 0px;
+}
+
+.item-selected a {
+    color: #94A9B7;
+}
+
+.main-menu__item {
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.main-menu__item:hover {
+    background: rgb(91 191 70 / 11%);
+
+}

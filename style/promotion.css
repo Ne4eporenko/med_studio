@@ -1,0 +1,51 @@
+/* block main-promotion */
+.main-promotion{
+    display: flex;
+    align-items: start;
+    padding: 30px 0px 60px 0px;
+    justify-content: center;
+    width: 100%;
+    background-color: #252D33;
+    margin-bottom: 30px;
+    
+}
+.main-promotion__text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 35%;
+    margin-right: 30px;
+}
+.main-promotion__text span{
+    color: #94A9B7;
+}
+.main-promotion__text h4{
+    color: white;
+    margin: 30px 0px;
+}
+.main-promotion__img{
+   position: relative; 
+   width: 35rem;
+   display: flex;
+   justify-content: center;
+}
+.main-promotion__img img:nth-child(1){
+    width: 80%;
+}
+.main-promotion__sale{
+    position: absolute;
+    top: -25%;
+    right: 0;
+    animation-name: rotation;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}

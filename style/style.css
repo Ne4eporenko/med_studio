@@ -33,6 +33,7 @@
     font-family: 'PT-Root-UI_Regular', sans-serif;
     margin: 0px;
     padding: 0px;
+    /* border: 1px solid #f00; */
 }
 
 .content {
@@ -43,14 +44,16 @@
     max-width: 1300px;
     margin: auto;
     position: relative;
+    font-size: 14px;
 }
 header.open .content{
     overflow-y: hidden;
 }
 body {
     background-color: #F3F7F9;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     min-width: 320px;
+
 }
 
 header {
@@ -66,7 +69,7 @@ main {
 footer {
     width: 100%;
     height: 100px;
-    background: rgb(50, 127, 71);
+
 }
 a{
     text-decoration: none;
@@ -80,4 +83,19 @@ button{
 }
 .btn-hover:hover{
     transform:scale(1.1)
+}
+.no_scroll{
+    overflow: hidden;
+    touch-action: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-size: 30px;
+    font-weight: bold;
+}
+h6{
+    font-size: 16px;
 }

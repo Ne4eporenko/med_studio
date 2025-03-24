@@ -1,0 +1,60 @@
+.main-sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main-sponsors h5 {
+    margin-bottom: 30px;
+}
+
+.main-sponsors__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-sponsors__block-card {
+    width: 45%;
+    height: 100px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sponsors__block-card.dr-reddy {
+    background-color: #3F1F81;
+}
+
+.main-sponsors__block-card.philips {
+    background-color: #0B5ED8;
+}
+.main-partners{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 50px auto;
+}
+.main-partners h5{
+    margin-bottom: 30px;
+}
+.main-partners__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-partners__block-card{
+    width: 30%;
+    height: 80px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

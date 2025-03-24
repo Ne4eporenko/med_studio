@@ -1,3 +1,21 @@
+@media (max-width: 1300px) {
+    main {
+        width: 96%;
+        margin: auto;
+    }
+
+    .speakers__card__text {
+        width: 60%;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .speakers__card {
+        width: 45%;
+    }
+}
+
 @media (max-width: 1000px) {
     .header__account-img {
         display: block;
@@ -18,40 +36,112 @@
         max-width: 500px;
     }
 
-    .main-baner__button {
-        flex-direction: column;
-        align-items: start;
-        height: 85px;
-    }
 
     #background_video {
         width: auto;
     }
+
+    .main-promotion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-promotion__text {
+        margin-right: 0px;
+        text-align: center;
+        align-items: center;
+        width: 55%;
+        margin-bottom: 50px;
+    }
+
+    .speakers__card {
+        height: 325px;
+    }
 }
 
-@media (max-width: 850px) {
-    .main-baner__text-info {
-        flex-wrap: wrap;
-        justify-content: start;
+@media (max-width: 900px) {
+    .main-baner__logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 100px;
     }
 
-    .text-info__block {
+    .main-baner__text {
         width: 100%;
-        margin-top: 5px;
     }
 
-    .text-info__new-stream {
-        margin-right: 5px;
+    .main-baner__logo img {
+        width: 100px;
+    }
+
+    .details__content__lecture {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .lecture__img {
+        margin-right: 0px;
+    }
+
+    .main-info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .main-info__text {
+        width: 100%;
+    }
+
+    .details__content__lecture {
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .main-info__course-payment {
+        width: 100%;
+        padding: 0px;
+        margin: 0px 20px;
+    }
+
+    .main-speakers__block {
+        flex-direction: column;
+    }
+
+    .speakers__card {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0px;
+    }
+
+    .speakers__card__img {
+        padding: 20px;
+    }
+
+    .course_scroll {
+
+        width: 120px;
+
     }
 }
 
 @media (max-width: 750px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 24px;
+    }
+
     .header-menu {
         justify-content: end;
         position: absolute;
-        width: 100%;
         right: 0;
-        height: 100%;
         top: 0;
         z-index: 20;
     }
@@ -75,8 +165,11 @@
     }
 
     header.open .header-menu {
-        background: rgba(255, 255, 255, 0.368);
-        backdrop-filter: blur(1px);
+        background: #f3f7f9bd;
+        backdrop-filter: blur(5px);
+        height: 100%;
+        min-width: 100%;
+        position: fixed;
     }
 
     header.open .header-menu .header-menu__item {
@@ -95,70 +188,186 @@
     .header-menu__item .header-menu__btn,
     .bt-item-club,
     .link {
-        font-size: 16px;
+        font-size: 22px;
+        font-weight: bold;
         width: 140px;
         margin: 10px 0px;
         justify-content: center;
     }
 
     .main-menu {
-        font-size: 24px;
-        max-width: 575px;
+        font-size: 22px;
+        max-width: 600px;
+    }
+
+    .main-promotion__text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 680px) {
+    .main-promotion__img {
+        width: 80%;
+    }
+
+    .main-promotion__sale {
+        width: 100px;
     }
 }
 
 @media (max-width: 580px) {
     .main-menu {
-        font-size: 20px;
+        font-size: 18px;
         max-width: 485px;
     }
-
-    .main-baner__logo {
-        position: absolute;
-        top: 30px;
-        right: 0;
-    }
 }
 
-@media (max-width: 500px) {
-    .main-menu {
-        font-size: 16px;
-        max-width: 405px;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-baner__text {
-        width: 100%;
+@media (max-width: 550px) {
+    .button.start-btn {
         margin: 0px;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .main-baner__logo {
-        display: none;
     }
 
     .main-baner__button {
-        width: 100%;
-        align-items: center;
+        flex-direction: column;
+        height: 85px;
+        justify-content: space-between;
     }
 
     .main-baner__text-info {
         justify-content: center;
     }
 
-    .text-info__block {
+    .main-baner__title {
+        text-align: center;
+    }
+
+    .details__content__lecture {
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        text-align: center;
+
+    }
+
+    .lecture__img {
+        margin-right: 0px;
+    }
+
+    .final-control__info {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .final-control__info-item {
+        margin: 5px 0px;
+    }
+
+    .speakers__card {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .speakers__card__text {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .main-sponsors__block {
+        flex-direction: column;
+    }
+
+    .main-sponsors__block-card {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .main-partners__block {
+        flex-direction: column;
+    }
+
+    .main-partners__block-card {
+        width: 100%;
+        margin: 10px auto;
     }
 }
-@media (max-width: 417px) {
-    .main-menu{
+
+@media (max-width: 500px) {
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .main-menu {
+        font-size: 14px;
+        max-width: 405px;
+    }
+
+    .main-baner__text-info {
+        flex-wrap: wrap;
+    }
+
+    .details__title {
+        font-size: 18px;
+    }
+
+    .final-control__title {
+        font-size: 18px;
+    }
+
+    .course-payment__price {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+    .main-menu {
         flex-direction: column;
         align-items: center;
     }
+
+}
+
+@media (max-width: 390px) {
+    .details__title {
+        font-size: 14px;
+    }
+
+    .final-control__title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .main-info__text-about {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .main-info__text-programm {
+        width: 100%;
+        margin: auto;
+    }
+
+    .main-info__course-payment {
+        margin: 30px auto;
+    }
+
+    .main-baner {
+        width: 100%;
+        margin: auto;
+    }
+
 }
